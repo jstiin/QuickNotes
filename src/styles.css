@@ -1,0 +1,57 @@
+body {
+    font-family: 'Segoe UI Variable', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgba(32,32,37,255);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#noteArea {
+    resize: none;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(47,46,50,255);
+    color: white;
+    overflow: hidden;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.116);
+}
+
+#noteArea:focus {
+    outline: none !important;
+    border: 1px solid var(--accent-color);
+}
+
+#saveButton {
+    margin-top: 3em;
+    height: 3em;
+    width: 10em;
+    background-color: rgba(56,55,59,180);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.116);
+}
+
+#saveButton:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+#saveButton:active {
+    filter: brightness(90%);
+}
+
+#saveButton:focus {
+    outline: none !important;
+    border: 1px solid var(--accent-color);
+}
+
+
